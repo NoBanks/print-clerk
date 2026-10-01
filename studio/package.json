@@ -1,0 +1,20 @@
+{
+  "name": "print-clerk-studio",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "sanity dev",
+    "schema:deploy": "sanity schema deploy",
+    "deploy": "sanity deploy"
+  },
+  "dependencies": {
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0",
+    "sanity": "^5.1.0",
+    "styled-components": "^6.1.18"
+  },
+  "devDependencies": {
+    "typescript": "^5.8.0"
+  }
+}

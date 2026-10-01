@@ -1,0 +1,207 @@
+[
+  {
+    "_id": "collection-chromatic-spaces",
+    "_type": "collection",
+    "title": "Chromatic Spaces",
+    "slug": { "_type": "slug", "current": "chromatic-spaces" },
+    "statement": "Framed prints of interior worlds built from color. Pieces are named by a fingerprint: the first six hex characters of the SHA-256 of the source file.",
+    "namingRule": "hash-fingerprint",
+    "isSample": true
+  },
+  {
+    "_id": "collection-lone-journey",
+    "_type": "collection",
+    "title": "Lone Journey",
+    "slug": { "_type": "slug", "current": "lone-journey" },
+    "statement": "A lone astronaut outdoors: deserts, beaches, coastlines, landmarks. If the astronaut is outside, it belongs here.",
+    "namingRule": "hash-fingerprint",
+    "isSample": true
+  },
+  {
+    "_id": "collection-anonstronauts",
+    "_type": "collection",
+    "title": "Anonstronauts",
+    "slug": { "_type": "slug", "current": "anonstronauts" },
+    "statement": "Astronauts inside colorful rooms. Anonymous by design: identity through a fingerprint, not a face.",
+    "namingRule": "hash-fingerprint",
+    "isSample": true
+  },
+  {
+    "_id": "collection-1440",
+    "_type": "collection",
+    "title": "1440",
+    "slug": { "_type": "slug", "current": "1440" },
+    "statement": "There are 1,440 minutes in a day. One picture for every minute of the day, a reminder to slow down and be present. Each piece is titled by its minute.",
+    "namingRule": "time-of-day",
+    "isSample": true
+  },
+
+  {
+    "_id": "artwork-cs-sample-01",
+    "_type": "artwork",
+    "title": "#3FA9C2",
+    "slug": { "_type": "slug", "current": "cs-3fa9c2" },
+    "catalogCode": "SAMPLE-CS-01",
+    "collection": { "_type": "reference", "_ref": "collection-chromatic-spaces" },
+    "medium": "Archival pigment print in a black frame",
+    "formats": [
+      { "_key": "f19x13", "label": "19x13 framed", "widthIn": 19, "heightIn": 13, "framed": true, "priceUsd": 140, "status": "available" },
+      { "_key": "f5x5", "label": "5x5 framed", "widthIn": 5, "heightIn": 5, "framed": true, "priceUsd": 40, "status": "available" }
+    ],
+    "story": "Sample entry. A teal room lit from one side, part of the interior-worlds series.",
+    "altText": "A teal interior room with a single warm light source on the left wall.",
+    "tags": ["teal", "interior", "framed"],
+    "isSample": true
+  },
+  {
+    "_id": "artwork-cs-sample-02",
+    "_type": "artwork",
+    "title": "#B04E7D",
+    "slug": { "_type": "slug", "current": "cs-b04e7d" },
+    "catalogCode": "SAMPLE-CS-02",
+    "collection": { "_type": "reference", "_ref": "collection-chromatic-spaces" },
+    "medium": "Archival pigment print in a black frame",
+    "formats": [
+      { "_key": "f19x13", "label": "19x13 framed", "widthIn": 19, "heightIn": 13, "framed": true, "priceUsd": 140, "status": "on_hold" }
+    ],
+    "story": "Sample entry. A magenta corridor that fades into violet at the far end.",
+    "altText": "A magenta corridor receding into violet shadow.",
+    "tags": ["magenta", "corridor", "framed"],
+    "isSample": true
+  },
+  {
+    "_id": "artwork-lj-sample-01",
+    "_type": "artwork",
+    "title": "#7C21E0",
+    "slug": { "_type": "slug", "current": "lj-7c21e0" },
+    "catalogCode": "SAMPLE-LJ-01",
+    "collection": { "_type": "reference", "_ref": "collection-lone-journey" },
+    "medium": "Archival pigment print in a black frame",
+    "formats": [
+      { "_key": "f12x12", "label": "12x12 framed", "widthIn": 12, "heightIn": 12, "framed": true, "priceUsd": 70, "status": "available" },
+      { "_key": "f5x7", "label": "5x7 framed", "widthIn": 5, "heightIn": 7, "framed": true, "priceUsd": 50, "status": "available" }
+    ],
+    "story": "Sample entry. An astronaut standing alone on a desert ridge at dusk.",
+    "altText": "A lone astronaut in a white suit standing on a desert ridge under an orange dusk sky.",
+    "tags": ["astronaut", "desert", "dusk"],
+    "isSample": true
+  },
+  {
+    "_id": "artwork-lj-sample-02",
+    "_type": "artwork",
+    "title": "#E5D017",
+    "slug": { "_type": "slug", "current": "lj-e5d017" },
+    "catalogCode": "SAMPLE-LJ-02",
+    "collection": { "_type": "reference", "_ref": "collection-lone-journey" },
+    "medium": "Archival pigment print in a black frame",
+    "formats": [
+      { "_key": "f12x12", "label": "12x12 framed", "widthIn": 12, "heightIn": 12, "framed": true, "priceUsd": 70, "status": "available" }
+    ],
+    "story": "Sample entry. An astronaut walking a coastline at low tide.",
+    "altText": "An astronaut walking along a wet shoreline, reflections in the sand.",
+    "tags": ["astronaut", "coast", "tide"],
+    "isSample": true
+  },
+  {
+    "_id": "artwork-an-sample-01",
+    "_type": "artwork",
+    "title": "#0D93F4",
+    "slug": { "_type": "slug", "current": "an-0d93f4" },
+    "catalogCode": "SAMPLE-AN-01",
+    "collection": { "_type": "reference", "_ref": "collection-anonstronauts" },
+    "medium": "Archival pigment print in a black frame",
+    "formats": [
+      { "_key": "f5x5", "label": "5x5 framed", "widthIn": 5, "heightIn": 5, "framed": true, "priceUsd": 40, "status": "available" }
+    ],
+    "story": "Sample entry. An astronaut seated in a blue room with a single round window.",
+    "altText": "An astronaut sitting in a bright blue room facing a round window.",
+    "tags": ["astronaut", "interior", "blue"],
+    "isSample": true
+  },
+  {
+    "_id": "artwork-an-sample-02",
+    "_type": "artwork",
+    "title": "#61C8AB",
+    "slug": { "_type": "slug", "current": "an-61c8ab" },
+    "catalogCode": "SAMPLE-AN-02",
+    "collection": { "_type": "reference", "_ref": "collection-anonstronauts" },
+    "medium": "Archival pigment print in a black frame",
+    "formats": [
+      { "_key": "f5x5", "label": "5x5 framed", "widthIn": 5, "heightIn": 5, "framed": true, "priceUsd": 40, "status": "on_hold" }
+    ],
+    "story": "Sample entry. An astronaut in a mint green room with a striped floor.",
+    "altText": "An astronaut standing in a mint green room on a striped floor.",
+    "tags": ["astronaut", "interior", "green"],
+    "isSample": true
+  },
+  {
+    "_id": "artwork-1440-sample-0412",
+    "_type": "artwork",
+    "title": "4:12 AM",
+    "slug": { "_type": "slug", "current": "1440-0412am" },
+    "catalogCode": "SAMPLE-1440-0412AM",
+    "collection": { "_type": "reference", "_ref": "collection-1440" },
+    "medium": "Archival pigment print in a black frame",
+    "formats": [
+      { "_key": "f5x7", "label": "5x7 framed", "widthIn": 5, "heightIn": 7, "framed": true, "priceUsd": 50, "status": "available" }
+    ],
+    "story": "Sample entry. The minute before first light.",
+    "altText": "A quiet street before dawn, with the sky just starting to turn blue.",
+    "tags": ["dawn", "minute", "street"],
+    "isSample": true
+  },
+  {
+    "_id": "artwork-1440-sample-1147",
+    "_type": "artwork",
+    "title": "11:47 PM",
+    "slug": { "_type": "slug", "current": "1440-1147pm" },
+    "catalogCode": "SAMPLE-1440-1147PM",
+    "collection": { "_type": "reference", "_ref": "collection-1440" },
+    "medium": "Archival pigment print in a black frame",
+    "formats": [
+      { "_key": "f5x7", "label": "5x7 framed", "widthIn": 5, "heightIn": 7, "framed": true, "priceUsd": 50, "status": "available" },
+      { "_key": "f5x5", "label": "5x5 framed", "widthIn": 5, "heightIn": 5, "framed": true, "priceUsd": 40, "status": "available" }
+    ],
+    "story": "Sample entry. A neon alley near midnight.",
+    "altText": "A narrow alley lit by pink and blue neon signs late at night.",
+    "tags": ["night", "neon", "alley"],
+    "isSample": true
+  },
+
+  {
+    "_id": "kb-pricing-tiers",
+    "_type": "knowledgeArticle",
+    "title": "How print sizes and prices relate",
+    "slug": { "_type": "slug", "current": "pricing-tiers" },
+    "topic": "policy",
+    "body": "Sample policy. Price depends on the print size, not on the collection. A price always belongs to one specific size. Never quote the price of one size for another size. When a buyer asks about a size that is not listed for a piece, say it is not offered and offer the sizes that are.",
+    "isSample": true
+  },
+  {
+    "_id": "kb-shipping",
+    "_type": "knowledgeArticle",
+    "title": "Pickup and shipping",
+    "slug": { "_type": "slug", "current": "shipping" },
+    "topic": "policy",
+    "body": "Sample policy. Local pickup is the default. Shipping terms are set per sale by the artist; the agent must not promise shipping times or costs.",
+    "isSample": true
+  },
+  {
+    "_id": "kb-care",
+    "_type": "knowledgeArticle",
+    "title": "Caring for a framed print",
+    "slug": { "_type": "slug", "current": "care" },
+    "topic": "care",
+    "body": "Sample guidance. Keep framed prints out of direct sunlight and away from humid rooms. Dust the glass with a dry microfiber cloth.",
+    "isSample": true
+  },
+  {
+    "_id": "kb-astronaut-collections",
+    "_type": "knowledgeArticle",
+    "title": "Lone Journey vs Anonstronauts",
+    "slug": { "_type": "slug", "current": "astronaut-collections" },
+    "topic": "collection-story",
+    "body": "Sample guidance. The indoor and outdoor test decides the astronaut collections. Astronaut outdoors means Lone Journey. Astronaut inside a colorful room means Anonstronauts. Never describe a piece with the other collection's name.",
+    "isSample": true
+  }
+]

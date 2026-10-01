@@ -1,0 +1,34 @@
+{
+  "name": "print-clerk",
+  "version": "1.0.0",
+  "description": "An art-catalog agent that only says what Sanity says: Context MCP reads, a verifier checks every price and size, a human approves.",
+  "scripts": {
+    "test": "vitest run",
+    "typecheck": "tsc --noEmit",
+    "clerk": "tsx src/cli.ts",
+    "demo": "tsx scripts/demo.ts",
+    "mock-mcp": "tsx src/mock/serve.ts",
+    "seed": "tsx scripts/seed.ts",
+    "export:ndjson": "tsx scripts/export-ndjson.ts"
+  },
+  "type": "module",
+  "dependencies": {
+    "@ai-sdk/mcp": "^1.0.90",
+    "@ai-sdk/openai-compatible": "^2.0.81",
+    "@modelcontextprotocol/sdk": "^1.31.0",
+    "@sanity/client": "^7.27.0",
+    "ai": "^6.0.299",
+    "groq-js": "^1.30.3",
+    "zod": "^4.6.5"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.3",
+    "tsx": "^4.23.15",
+    "typescript": "^5.9.3",
+    "vitest": "^5.0.3"
+  },
+  "license": "MIT",
+  "engines": {
+    "node": ">=20.19"
+  }
+}
