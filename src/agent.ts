@@ -39,9 +39,17 @@ function audit(actor: string, action: string, subjectId: string, details: unknow
   }
 }
 
-/** Pull "- path..." lines out of a Knowledge Base outline. */
+/**
+ * Pull entry paths out of a Knowledge Base outline. The emulator writes "- path [core]: title";
+ * the hosted Context endpoint writes bare "path [core]" lines under a "# Knowledge bases" heading
+ * (seen live 2026-10-02), so both shapes are accepted.
+ */
 export function outlinePaths(outline: string): Array<{path: string; core: boolean}> {
-  return [...outline.matchAll(/^\s*[-*]\s+([\w./-]+)(.*)$/gm)].map((m) => ({path: m[1], core: /\[core\]/.test(m[2])}))
+  const kbAt = outline.search(/^#\s+Knowledge bases\s*$/m)
+  const text = kbAt >= 0 ? outline.slice(kbAt) : outline
+  const bulleted = [...text.matchAll(/^\s*[-*]\s+([\w./-]+)(.*)$/gm)].map((m) => ({path: m[1], core: /\[core\]/.test(m[2])}))
+  if (bulleted.length) return bulleted
+  return [...text.matchAll(/^\s*([a-z0-9][\w./-]*)((?:\s+\[core\])?)\s*$/gm)].map((m) => ({path: m[1], core: m[2].includes('[core]')}))
 }
 
 export class PrintClerk {

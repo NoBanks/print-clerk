@@ -169,3 +169,29 @@ describe('ids', () => {
     expect((await h.store.auditLog(d._id))[0]._id).toMatch(/^clerk\.audit\./)
   })
 })
+
+describe('outlinePaths on the hosted Context outline', () => {
+  it('reads bare "path [core]" lines under the Knowledge bases heading and ignores tool bullets above it', () => {
+    const hosted = [
+      '## Tools',
+      '- **knowledge_base_read**: Read full entries.',
+      '',
+      '# Knowledge bases',
+      'Knowledge base id: `kbExample`',
+      '## Print Clerk catalog',
+      '5 entries.',
+      'care_and_display',
+      'catalog/listings [core]',
+      'catalog/pricing [core]',
+      'collections [core]',
+      'shipping_and_fulfillment',
+    ].join('\n\n')
+    expect(outlinePaths(hosted)).toEqual([
+      {path: 'care_and_display', core: false},
+      {path: 'catalog/listings', core: true},
+      {path: 'catalog/pricing', core: true},
+      {path: 'collections', core: true},
+      {path: 'shipping_and_fulfillment', core: false},
+    ])
+  })
+})
