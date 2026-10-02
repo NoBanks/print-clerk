@@ -7,3 +7,5 @@ studio/dist/
 .env.*
 !.env.example
 *.tmp
+RYAN_STEPS.md
+DEV_POST_DRAFT.md
